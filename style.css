@@ -1,41 +1,140 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+    background-color: #ffddc1;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background-color: #ffab91;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.navlist {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navlist li {
+    margin: 0 15px;
+}
+
+.navlist a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navlist a:hover {
+    color: #d32f2f;
+    transform: scale(1.1);
+}
+
 main {
     padding: 50px;
 }
 
-.navbar  {
-padding: 10px;
-display: flex;
-}
-.navlist{
-    display: flex;
-
-    li {
-        display: block; 
-        margin: 10px;
-        padding: 15px;
-
-        a { 
-            text-decoration: none; 
-            color: black;
-         }
-    }
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    transition: color 0.3s;
 }
 
-.navlist :hover{
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2 )
+h1:hover {
+    color: #ff7043;
 }
 
-.presentación {
-    background-color: #f0f0f0;
+fieldset {
+    border: 2px solid #ff7043;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    transition: box-shadow 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+fieldset:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffe0b2;
+    transform: scale(1.02);
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff7043;
+    transition: color 0.3s;
+}
+
+legend:hover {
+    color: #bf360c;
+}
+
+.presentacion, .formacion-academica, .experiencia-laboral, .intereses, .contacto {
     margin-top: 20px;
-    padding: 16px 24px;
-}
-
-.formacion-academica {
-    text-align: left;
 }
 
 .formacion-academica ul {
-    color:grey;
+    color: grey;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #fff3e0;
+    color: #333;
+}
+
+input[type="submit"] {
+    background-color: #ff7043;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="date"]:focus, input[type="file"]:focus {
+    border-color: #ff7043;
+    box-shadow: 0 0 8px rgba(255, 112, 67, 0.3);
+}

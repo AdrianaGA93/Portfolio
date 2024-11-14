@@ -1,86 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!--
- Quien soy
- Formacion Academica
- Experiencia laboral
- Intereses
- Contacto
-    -->
     <header>
-        <navbar class="navbar">
+        <nav class="navbar">
             <ul class="navlist">
-                <li> <a href="#quien-soy">Quien soy</a></li>
-                <li><a href="#formación-académica">Formación académica</a></li>
+                <li><a href="#quien-soy">Quien soy</a></li>
+                <li><a href="#formacion-academica">Formación académica</a></li>
                 <li><a href="#experiencia-laboral">Experiencia laboral</a></li>
                 <li><a href="#intereses">Intereses</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </navbar>
+        </nav>
     </header>
-
     <main>
-    <h1>Bienvenidos a mi portfolio</h1>
-    <section class="presentación">
-       
-        <section id="quien-soy">
-            <h2>Quien soy</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit, nulla ac pretium pretium, dolor turpis dapibus quam, quis volutpat risus velit tristique velit. Nunc sed dolor eget erat euismod aliquam a sit amet magna. Aliquam viverra tellus non neque tincidunt ultricies. Phasellus sit amet est vel elit tempus elementum. Curabitur sed dictum ipsum, et feugiat turpis. Aenean at dictum nibh. Donec mi enim, sagittis a velit eu, molestie dignissim lectus. Cras eu blandit massa. Duis rhoncus justo ac nisl pellentesque accumsan. Sed eu ante eget lectus eleifend mattis. Donec viverra mauris eu enim gravida, mollis lobortis mi semper. Aenean ut arcu aliquet, dignissim diam et, fringilla nisi. Suspendisse potenti. Aenean ultricies feugiat interdum.
-    
-            </p>
-        </section>
-    </section> 
-
-        <section class="formacion-academica">
-            <h2>Formación académica</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum repellat ipsum similique voluptas dicta? Iusto, ipsum illo quaerat cupiditate possimus perspiciatis impedit fugit maiores. Assumenda libero voluptas minus quaerat quo!</p>
+        <h1>Bienvenidos a mi portfolio</h1>
+        <fieldset class="presentacion" id="quien-soy">
+            <legend>Quien soy</legend>
+            <p>Lorem ipsum dolor sit amet...</p>
+        </fieldset>
+        <fieldset class="formacion-academica" id="formacion-academica">
+            <legend>Formación académica</legend>
+            <p>Lorem ipsum dolor sit amet consectetur...</p>
             <ul>
-                <li>Formacion 1 </li>
-                <li>Formacion 2 </li>
-                <li>Formacion 3 </li>
+                <li>Formacion 1</li>
+                <li>Formacion 2</li>
+                <li>Formacion 3</li>
             </ul>
-        </section>
-
-        <section class="experiencia-laboral">
-            <h2>Experiencia laboral</h2>
-         <table>
+        </fieldset>
+        <fieldset class="experiencia-laboral" id="experiencia-laboral">
+            <legend>Experiencia laboral</legend>
+            <table>
+                <tr>
+                    <td>Posicion</td>
+                    <td>Empresa</td>
+                    <td>Fechas</td>
+                </tr>
+                <tr>
+                    <td>Posicion1</td>
+                    <td>Empresa1</td>
+                    <td>Fechas1</td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset class="intereses" id="intereses">
+            <legend>Intereses</legend>
             <tr>
-                <td>Posicion</td>
-                <td>Empresa</td>
-                <td>Fechas</td>
+                <td>Interés 1</td>
+                <td>Interés 2</td>
+                <td>Interés 3</td>
             </tr>
-            <tr>
-                <td>Posicion1</td>
-                <td>Empresa1</td>
-                <td>Fechas1</td>
-            </tr>
-         </table>
-        </section>
-
-        <section class="intereses">
-             <h2>Intereses</h2>
-         <tr>
-            <td>Interés 1</td>
-            <td>Interés 2</td>
-            <td>Interés 3</td>
-         </tr>    
-            
-        </section>
-        
-        <section id="contacto">
-            <h2>Contacto</h2>
-          
-        </section>
-    
-</main>
-    
+        </fieldset>
+        <fieldset class="contacto" id="contacto">
+            <legend>Contacto</legend>
+            <form action="/submit" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="telefono">Número Telefónico:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+                <label for="archivo">Seleccione un archivo:</label>
+                <input type="file" id="archivo" name="archivo" required><br><br>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                <label for="terminos">Acepto los términos y condiciones</label><br><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </fieldset>
+    </main>
 </body>
 </html>
