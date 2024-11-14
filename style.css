@@ -1,0 +1,41 @@
+main {
+    padding: 50px;
+}
+
+.navbar  {
+padding: 10px;
+display: flex;
+}
+.navlist{
+    display: flex;
+
+    li {
+        display: block; 
+        margin: 10px;
+        padding: 15px;
+
+        a { 
+            text-decoration: none; 
+            color: black;
+         }
+    }
+}
+
+.navlist :hover{
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2 )
+}
+
+.presentación {
+    background-color: #f0f0f0;
+    margin-top: 20px;
+    padding: 16px 24px;
+}
+
+.formacion-academica {
+    text-align: left;
+}
+
+.formacion-academica ul {
+    color:grey;
+}
+
